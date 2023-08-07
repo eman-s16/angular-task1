@@ -1,0 +1,40 @@
+
+<!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+         <img src="./assets/img/mark.png" width="150" alt="">
+          <h2>Student Mark Page</h2>
+          <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        </div>
+    </div><!-- End Breadcrumbs -->
+  
+   
+   <div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mark</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students">
+            <td>{{ student.name }}</td>
+            <td>{{ student.email }}</td>
+            <td [ngClass]="student.mark < 50 ?'low-mark':'high-mark'" >
+            
+             
+                <span [ngStyle]="{'color':student.mark < 50?'red':'green' }">{{ student.mark }}</span>
+            
+            </td>
+            
+            <td>
+                <span *ngIf="hasPassed(student.mark)" class='pass'>PASS</span>
+                <span *ngIf="!hasPassed(student.mark)" class='fail'>FAIL</span>
+              </td>
+        </tr>
+        </tbody>
+      </table>
+   </div>

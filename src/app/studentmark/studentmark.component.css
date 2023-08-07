@@ -1,0 +1,100 @@
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f6f7f6;
+  }
+  
+  .section-title {
+    padding-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #9ae1af;
+    margin: 4px 10px;
+  }
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #37423b;
+  }
+  
+  .breadcrumbs {
+  
+    text-align: center;
+    background: #5fcf80;
+    padding: 30px 0;
+    color: #fff;
+  }
+  
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 63px;
+    }
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  .breadcrumbs p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .low-mark {
+    background-color: #ffa6a6; /* Light red for low marks */
+  }
+  
+  .high-mark {
+    background-color: #b0e57c; /* Light green for high marks */
+  }
+  
+  .pass {
+    color: #4caf50; /* Green for PASS */
+  }
+  
+  .fail {
+    color: #f44336; /* Red for FAIL */
+  }
+  
